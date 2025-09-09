@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlmodel import Session, select
-from models.car import Car, CarCreate, CarRead, CarUpdate
-from config.db import create_db_and_tables, get_session
+from src.models.car import Car, CarCreate, CarRead, CarUpdate
+from src.config.db import create_db_and_tables, get_session
 from contextlib import asynccontextmanager
 from fastapi.middleware.cors import CORSMiddleware
 
